@@ -1,16 +1,22 @@
-import { useState } from 'react';
+import { Accessor } from './components/Accessor';
+import { Pagination } from './components/Pagination';
+import { Sort } from './components/Sort';
+import './index.css';
 
 const App = () => {
-  const [count, setCount] = useState(0);
   return (
     <div>
-      <h1>テンプレートタイトル</h1>
-      <button type="button" onClick={() => setCount((prev) => prev + 1)}>
-        count is {count}
-      </button>
-      <div>test</div>
-      <div>test</div>
-      <div>test</div>
+      <h1>Accessor</h1>
+      <Accessor />
+      <br />
+      <hr />
+      <br />
+      <h1>Sort</h1>
+      <Sort />
+      <hr />
+      <br />
+      <h1>Pagination</h1>
+      <Pagination />
     </div>
   );
 };
